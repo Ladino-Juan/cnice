@@ -1,4 +1,3 @@
-// Products.js
 import React from "react";
 import Card from "./Card";
 import Slider from "react-slick";
@@ -11,6 +10,7 @@ const Products = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,14 +38,14 @@ const Products = () => {
           infinite: false,
           dots: true,
           centerMode: true,
-          centerPadding: "15%",
+          centerPadding: "20px",
         },
       },
     ],
   };
 
   return (
-    <div className="w-full bg-[#ffd3b1] py-12 md:py-24">
+    <div className="w-full bg-[#ffd3b1] py-8 md:py-24" id="products">
       <div className="md:max-w-[1280px] m-auto max-w-[600px] px-4 md:px-6">
         <div className="py-4 text-right">
           <h1 className="py-2 text-2xl md:text-3xl font-bold">
@@ -56,10 +56,10 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="px-0">
+        <div className="px-0 md:px-4">
           <Slider {...settings}>
             {products.map((product, i) => (
-              <div key={i} className="px-2 outline-none flex items-stretch">
+              <div key={i} className="px-2 outline-none">
                 <Card product={product} />
               </div>
             ))}

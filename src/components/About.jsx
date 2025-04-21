@@ -6,7 +6,7 @@ import { BsStars } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <div className='w-full bg-[#FFF5ED] py-16 md:py-24'>
+    <div className='w-full bg-[#FFF5ED] py-16 md:py-24' id="home">
       <div className='md:max-w-[1280px] m-auto grid md:grid-cols-2 max-w-[600px] px-4 md:px-6 gap-12 items-center'>
         
         <div className='order-last md:order-first'>

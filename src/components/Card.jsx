@@ -27,10 +27,14 @@ const Card = ({product}) => {
         </div>
       </div>
 
-      {/* Add to Cart Button */}
-      <button className='absolute bottom-0 left-0 right-0 bg-[#F4842F] hover:bg-[#e67a2b] text-white py-2 transition-colors duration-200 font-medium text-sm'>
-        הוסף לסל
-      </button>
+      <a 
+  href="http://wa.link/vbahg2" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className='absolute bottom-0 left-0 right-0 bg-[#F4842F] hover:bg-[#e67a2b] text-white py-2 transition-colors duration-200 font-medium text-sm text-center'
+>
+  הוסף לסל
+</a>
     </div>
   )
 }

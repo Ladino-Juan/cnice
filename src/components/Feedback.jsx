@@ -41,7 +41,7 @@ const Feedback = () => {
   };
 
   return (
-    <div className='w-full bg-[#FFF5ED] py-16 md:py-24'>
+    <div className='w-full bg-[#FFF5ED] py-16 md:py-24' id='reviews'>
       <div className='md:max-w-[1280px] m-auto max-w-[600px] px-4 md:px-6'>
         <div className='py-4 text-right'>
           <h1 className='py-2 text-2xl md:text-3xl font-bold'>לקוחות <span className='text-[#F4842F]'>מספרים</span></h1>

@@ -1,35 +1,53 @@
-import React from 'react'
-import { cta } from '../assets' // Replace with your cosmetic product image
+import React from "react";
+import { cta } from "../assets"; // Replace with your promotion image
 
 const CTA = () => {
   return (
-    <div className='w-full bg-[#FFF5ED] py-16 md:py-24'>
-      <div className='md:max-w-[1280px] m-auto grid md:grid-cols-2 gap-12 items-center max-w-[600px] px-4 md:px-6'>
-        
-        {/* Product Image */}
-        <div className='order-last md:order-first'>
-          <img 
-            src={cta} 
-            alt="CNICE מוצרי טיפוח" 
-          />
+    <div className="w-full bg-[#FFF5ED] py-16 md:py-24">
+      <div className="md:max-w-[1280px] m-auto grid md:grid-cols-2 gap-12 items-center max-w-[600px] px-4 md:px-6">
+        {/* Promotion Image */}
+        <div className="order-last md:order-first">
+          <img src={cta} alt="CNICE מבצע מיוחד - 2 מוצרים ב-200 ש״ח" />
         </div>
 
         {/* CTA Content */}
-        <div className='text-right space-y-4'>
-          <h1 className='text-3xl md:text-4xl font-bold leading-tight'>
-            גלו את הסוד <span className='text-[#F4842F]'>ליופי טבעי</span> עם CNICE
-          </h1>
-          <p className='text-lg text-gray-700'>
-            הצטרפו לאלפי לקוחות מרוצים שגילו את ההבדל של מוצרי הטיפוח האיכותיים שלנו
-          </p>
-          <button className='mt-6 px-8 py-4 rounded-lg bg-[#F4842F] hover:bg-[#e67a2b] text-white font-bold text-lg transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-1'>
-            קנו עכשיו
-          </button>
-        </div>
+        <div className="text-right space-y-4">
+          <div className="bg-[#F4842F]/10 px-4 py-2 rounded-full inline-block">
+            <p className="text-[#F4842F] font-medium">מבצע מיוחד!</p>
+          </div>
 
+          <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+            <span className="text-[#F4842F]">2 מוצרים ב-200 ש״ח</span> בלבד
+          </h1>
+
+          <p className="text-lg text-gray-700">
+            הרכיבו את ערכת הטיפוח המושלמת עם מבצע מיוחד זה. בחרו 2 מוצרים
+            מהקולקציה שלנו ותהנו מחיסכון משמעותי!
+          </p>
+
+          <div className="flex flex-col md:flex-row-reverse gap-4 justify-end">
+            {/* WhatsApp Buy Now Button */}
+            <a
+              href="http://wa.link/vbahg2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 px-8 py-4 rounded-lg bg-[#F4842F] hover:bg-[#e67a2b] text-white font-bold text-lg transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 text-center"
+            >
+              קנו עכשיו והחסכו
+            </a>
+
+            {/* Discover Products Button */}
+            <a
+              href="/#products"
+              className="mt-4 px-8 py-4 rounded-lg border-2 border-[#F4842F] text-[#F4842F] hover:bg-[#F4842F]/10 font-bold text-lg transition-colors duration-200 text-center"
+            >
+              גלו את המוצרים
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CTA
+export default CTA;
