@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {logo,lock, hamburgerMenu, close} from '../assets'
+import {logo, hamburgerMenu, close} from '../assets'
 
 const Navbar = () => {
 
@@ -10,53 +10,51 @@ const Navbar = () => {
     <div className='w-full h-[80px] bg-white border-b'>
         <div className='md:max-w-[1480px] max-w-[600px] m-auto w-full h-full flex justify-between items-center md:px-0 px-4'>
             
-            <img src={logo} className="h-[25px]" />
+            <img src={logo} className="h-[70px]" />
             
-            <div className='hidden md:flex items-center '>
-                <ul className='flex gap-4'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Support</li>
-                    <li>Platform</li>
-                    <li>Pricing</li>
-                </ul>
+            <div className='hidden md:flex items-center'>
+                <div className='flex gap-6'>
+                    <a href="/" className='text-gray-800 hover:text-[#F4842F] transition-colors duration-300 transform hover:scale-105 relative group'>
+                        <span className='relative'>
+                            דף הבית
+                            <span className='absolute bottom-0 left-0 w-full h-0.5 bg-[#F4842F] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
+                        </span>
+                    </a>
+                    <a href="/about" className='text-gray-800 hover:text-[#F4842F] transition-colors duration-300 transform hover:scale-105 relative group'>
+                        <span className='relative'>
+                            אודות
+                            <span className='absolute bottom-0 left-0 w-full h-0.5 bg-[#F4842F] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
+                        </span>
+                    </a>
+                    <a href="/reviews" className='text-gray-800 hover:text-[#F4842F] transition-colors duration-300 transform hover:scale-105 relative group'>
+                        <span className='relative'>
+                            ביקורות
+                            <span className='absolute bottom-0 left-0 w-full h-0.5 bg-[#F4842F] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
+                        </span>
+                    </a>
+                    <a href="/products" className='text-gray-800 hover:text-[#F4842F] transition-colors duration-300 transform hover:scale-105 relative group'>
+                        <span className='relative'>
+                            מוצרים
+                            <span className='absolute bottom-0 left-0 w-full h-0.5 bg-[#F4842F] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
+                        </span>
+                    </a>
+                </div>
             </div>
 
-
-            <div className='hidden md:flex'>
-                <button className='flex justify-between items-center  bg-transparent  px-6 gap-2'>
-                    <img src={lock} />
-                    Login
-                </button>
-                <button className='px-8 py-3 rounded-md bg-[#20B486] text-white font-bold'>Sign Up For Free</button>
-            </div>
-
-            <div className='md:hidden'  onClick={handleClick}>
+            <div className='md:hidden' onClick={handleClick}>
                     <img src={toggle?close:hamburgerMenu} />
             </div>
 
-
-
-
         </div>
 
-        <div className={toggle?'absolute z-10 p-4  bg-white w-full px-8 md:hidden border-b':'hidden'}>
-            <ul>
-                    <li className='p-4 hover:bg-gray-100'>Home</li>
-                    <li className='p-4 hover:bg-gray-100'>About</li>
-                    <li className='p-4 hover:bg-gray-100'>Support</li>
-                    <li className='p-4 hover:bg-gray-100'>Platform</li>
-                    <li className='p-4 hover:bg-gray-100'>Pricing</li>
-                    <div className='flex flex-col my-4 gap-4'>
-                        <button className='border border-[20B486] flex justify-center items-center  bg-transparent  px-6 gap-2 py-4'>
-                         <img src={lock} />
-                         Login
-                        </button>
-                        <button className='px-8 py-5 rounded-md bg-[#20B486] text-white font-bold'>Sign Up For Free</button>
-                    </div>
-            </ul>
+        <div className={toggle?'absolute z-10 p-4 bg-white w-full px-8 md:hidden border-b':'hidden'}>
+            <div className='flex flex-col gap-4'>
+                <a href="/" className='p-4 hover:bg-gray-100 hover:text-[#F4842F] transition-all duration-300'>דף הבית</a>
+                <a href="/about" className='p-4 hover:bg-gray-100 hover:text-[#F4842F] transition-all duration-300'>אודות</a>
+                <a href="/reviews" className='p-4 hover:bg-gray-100 hover:text-[#F4842F] transition-all duration-300'>ביקורות</a>
+                <a href="/products" className='p-4 hover:bg-gray-100 hover:text-[#F4842F] transition-all duration-300'>מוצרים</a>
+            </div>
         </div>
-        
         
     </div>
   )
