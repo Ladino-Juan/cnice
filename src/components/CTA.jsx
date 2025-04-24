@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import { cta } from "../assets"; // Replace with your promotion image
 
 const CTA = () => {
@@ -7,7 +7,7 @@ const CTA = () => {
       <div className="md:max-w-[1280px] m-auto grid md:grid-cols-2 gap-12 items-center max-w-[600px] px-4 md:px-6">
         {/* Promotion Image */}
         <div className="order-last md:order-first">
-          <img src={cta} alt="CNICE מבצע מיוחד - 2 מוצרים ב-200 ש״ח" />
+          <img src={cta} alt="CNICE מבצע מיוחד - שמפו + מסכה ב-200 ש״ח" />
         </div>
 
         {/* CTA Content */}
@@ -17,12 +17,11 @@ const CTA = () => {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-            <span className="text-[#F4842F]">2 מוצרים ב-200 ש״ח</span> בלבד
+            <span className="text-[#F4842F]">שמפו + מסכה ב-200 ש״ח</span> בלבד
           </h1>
 
           <p className="text-lg text-gray-700">
-            הרכיבו את ערכת הטיפוח המושלמת עם מבצע מיוחד זה. בחרו 2 מוצרים
-            מהקולקציה שלנו ותהנו מחיסכון משמעותי!
+            הרכיבו את ערכת הטיפוח המושלמת עם שמפו ומסכת שיער איכותיים – במחיר מיוחד של 200 ש״ח בלבד!
           </p>
 
           <div className="flex flex-col md:flex-row-reverse gap-4 justify-end">

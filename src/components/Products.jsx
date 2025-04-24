@@ -57,7 +57,7 @@ const Products = () => {
         </div>
 
         <div className="px-0 md:px-4">
-          <Slider {...settings}>
+          <Slider {...settings} >
             {products.map((product, i) => (
               <div key={i} className="px-2 outline-none">
                 <Card product={product} />

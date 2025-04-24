@@ -17,7 +17,7 @@ export const products = [
   },
   {
     id: 3,
-    title: "שמפו לניקוי פנים",
+    title: "סבון פנים",
     category: "פנים",
     price: 120,
     rating: 4.8,

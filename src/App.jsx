@@ -18,8 +18,8 @@ const App = () => {
       <Navbar />
       <About />
       <Products />
-      <Feedback />
       <CTA />
+      <Feedback />
       <Footer />
       {/* Floating WhatsApp Button */}
       <a

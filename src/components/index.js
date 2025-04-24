@@ -5,5 +5,6 @@ import Feedback from "./Feedback";
 import CTA from "./CTA";
 import Footer from "./Footer";
 import AccessibilityButton from "./AccessibilityButton";
+import TermsAndConditions from "./TermsAndConditions";
 
-export {Navbar, Products, About, Feedback, CTA, Footer, AccessibilityButton}
+export {Navbar, Products, About, Feedback, CTA, Footer, AccessibilityButton, TermsAndConditions}
