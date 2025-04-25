@@ -66,6 +66,10 @@ const Footer = () => {
         <p className="text-gray-500 text-sm">
           © {new Date().getFullYear()} CNICE. כל הזכויות שמורות
         </p>
+        <a href="https://bhwebs.com" target="_blank" rel="noopener noreferrer"
+            class="mt-2 md:mt-0 hover:text-gray-300 text-sm transition-colors duration-300">
+            נבנה על ידי BHWEBS
+          </a>
       </div>
     </div>
   );
